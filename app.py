@@ -40483,8 +40483,7 @@ with st.sidebar:
     st.header('Navigation')
     section=st.radio('View', ['Overview','All 14 figure–table pairs','Single figure explorer','Statistical tests','Full data audit','Downloads & verification'])
     st.divider()
-    st.success('No uploads required: original figures, tables and all records are embedded inside app.py and SHA-256 verified.')
-
+    
 c1,c2,c3,c4=st.columns(4)
 c1.metric('Puzzle records',f'{len(puzzles):,}')
 c2.metric('Models',str(master.model.nunique()))
